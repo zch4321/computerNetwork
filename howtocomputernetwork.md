@@ -39,6 +39,8 @@
 9. 进入vlan,启动dhcp
 
     interface vlan 10
+    dhcp select global
+    
 
 10.  找到你这个网络段的二级交换机 ![topo3](/topo3.jpg)
 11. 打开dhcp，设置trunk口（一定需要！），和dhcp转发（并不一定需要）
