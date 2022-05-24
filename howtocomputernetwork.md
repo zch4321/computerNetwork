@@ -48,14 +48,14 @@
     system-view  
 
     dhcp enable
-
-    int eth 0/0/1  
-    port link-type trunk
-    port trunk allow-pass vlan all
+ 
+    int eth 0/0/1   
+    port link-type trunk  
+    port trunk allow-pass vlan all  
     quit
 
-    int vlan 10
-    dhcp select relay
+    int vlan 10  
+    dhcp select relay  
 
 12. 设置你的pc使用DHCP,点击DHCP并点击应用 ![设置pc](pc2.jpg)
 13. 打开pc命令行并输入
@@ -73,10 +73,10 @@
 3. 点击启动按钮启动DNS服务器，注意上面配置DHCP时配置的dns-list后面的ip地址应与你配置的ip地址相同
 4. 在DNS服务器的二级交换机上将DNS服务器分配至vlan
 
-    int eth 0/0/3  
-    port link-type access
-    port default vlan 100
-    quit
+    int eth 0/0/3    
+    port link-type access  
+    port default vlan 100  
+    quit  
 
 5. 如果你的pc可以ping到该DNS服务器的ip地址（这里就是192.168.100.21），那么你就应该能连接到DNS服务器了
    1. ![pc](/pc4.jpg)
