@@ -9,7 +9,7 @@
 
 2. 双击他，打开cli输入指令，并开启dhcp
 
-    system-view
+    system-view  
     dhcp-enable
 
 3. 进入ip pool 这里的jiaoxue是ip pool的名字，之后会用到
@@ -38,7 +38,7 @@
 
 9. 进入vlan,启动dhcp
 
-    interface vlan 10
+    interface vlan 10  
     dhcp select global
     
 
